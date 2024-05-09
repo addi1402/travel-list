@@ -5,7 +5,7 @@ export default function Item(props) {
     <li>
       <span
         className={props.packed ? "packed-item" : ""}
-      >{`${props.quantity} ${props.name}`}</span>
+      >{`${props.quantity} ${props.description}`}</span>
       <button className="delete-button">
         <AiOutlineClose className="icon"/>
       </button>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Form() {
+export default function Form({items, setItems}) {
   let [itemName, setItemName] = React.useState("");
   let [selected, setSelected] = React.useState(3);
 
@@ -13,7 +13,8 @@ export default function Form() {
       packed: false,
       id: Date.now(),
     };
-    console.log(newItem);
+    let x = [...items, newItem]
+    setItems(x);
   }
   return (
     
