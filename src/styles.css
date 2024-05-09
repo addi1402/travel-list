@@ -38,7 +38,15 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
+
+input[type="checkbox"]{
+    background-color: #fff;
+    margin: 0;
+    width: 1.15em;
+    height: 1.15em;
+  }
 
 .delete-button{
     margin-left: 10px;
