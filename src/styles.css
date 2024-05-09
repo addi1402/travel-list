@@ -122,9 +122,11 @@ label{
 
 .stats{
     position: fixed;
+    width: 100%;
     bottom: 0;
-    background-color: #a263e9;
-    padding: 5px;
+    left: 0;
+    background-color: #c088ff;
+    padding: 10px 30px;
 }
 
 .item-box{

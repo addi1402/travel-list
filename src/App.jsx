@@ -8,6 +8,9 @@ export default function App() {
 
   let [itemList, setItemList] = React.useState([]);
 
+  let itemCount = itemList.length;
+  let packedCount = itemList.filter((i)=> i.packed === true).length;
+
   function handleAddItem(item){
     let x = [...itemList, item];
     setItemList(x);
@@ -28,7 +31,7 @@ export default function App() {
       <Logo />
       <Form handleAddItem={handleAddItem}/>
       <PackingList items={itemList} onDelete={handleDelete} onCheck={handleItem}/>
-      <Stats/>
+      <Stats count={itemCount} packed={packedCount}/>
     </div>
   );
 }
